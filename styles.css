@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-image: url('/imagenes/IMG_7421.jpg'); /* Imagen de fondo */
+    background-image: url('imagenes/IMG_7421.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -125,7 +125,7 @@ body, html {
     position: absolute;
     width: 100px; /* Ajusta el tamaño según la imagen */
     height: 100px; /* Ajusta el tamaño según la imagen */
-    background-image: url('satelite-6.gif'); /* Ruta a tu imagen */
+    background-image: url('imagenes/satelite-6.gif'); /* Ruta a tu imagen */
     background-size: cover; /* Asegura que la imagen cubra todo el bot */
     background-position: center; /* Centra la imagen dentro del elemento */
     border-radius: 50%; /* Mantiene la forma circular, quítalo si quieres un cuadrado */
