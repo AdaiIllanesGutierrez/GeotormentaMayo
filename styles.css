@@ -1,0 +1,167 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('/imagenes/IMG_7421.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+  
+  #solar-system-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Título */
+  .title {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'UnifrakturMaguntia', 'Cinzel Decorative', serif; /* Fuentes góticas */
+    background: linear-gradient(135deg, #9f5f80, #6a82fb, #fc5c7d, #34e89e); /* Gradiente estilo aurora boreal */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+  }
+  
+  /* Planetas */
+  .planet {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: orbit 10s linear infinite; /* Animación de órbita */
+  }
+  
+  /* Colores más llamativos */
+  #planet1 {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    /* background: radial-gradient(circle, #ffdd57, #ff7a18); */
+    transform: translate(-50%, -50%); /* Centrar la Tierra */
+    animation: none; /* La Tierra no orbita */
+  }
+  
+  #planet2 {
+    top: 50%;
+    left: 50%;
+    transform-origin: -150px 0; /* Distancia desde el centro */
+    /* background-image: url('latest_1024_0193.mp4'); */
+    /* background: radial-gradient(circle, #ff6f61, #de4313); */
+  }
+  
+  #planet3 {
+    top: 50%;
+    left: 50%;
+    transform-origin: -200px 0;
+    /* background: radial-gradient(circle, #5a3f37, #2c7744); */
+  }
+  
+  #planet4 {
+    top: 50%;
+    left: 50%;
+    transform-origin: -250px 0;
+    /* background: radial-gradient(circle, #36d1dc, #5b86e5); */
+  }
+  
+  #planet5 {
+    top: 50%;
+    left: 50%;
+    transform-origin: -300px 0;
+    /* background: radial-gradient(circle, #ff9966, #ff5e62); */
+  } 
+  
+  #planet6 {
+    top: 50%;
+    left: 50%;
+    transform-origin: -350px 0;
+    /* background: radial-gradient(circle, #f7971e, #ffd200); */
+  }
+  
+  /* Animación para la órbita */
+  @keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  /* Agrandar el planeta al pasar el mouse */
+  .planet:hover {
+    transform: scale(1.1); /* Agranda el planeta al 150% de su tamaño original */
+  }
+  
+  /* Bot flotante */
+  /* #bot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    transition: all 1s ease;
+    z-index: 1;
+  } */
+  
+  /* Bot flotante */
+  #bot {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño según la imagen */
+    height: 100px; /* Ajusta el tamaño según la imagen */
+    background-image: url('satelite-6.gif'); /* Ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el bot */
+    background-position: center; /* Centra la imagen dentro del elemento */
+    border-radius: 50%; /* Mantiene la forma circular, quítalo si quieres un cuadrado */
+    transition: all 1s ease;
+    z-index: 1;
+  }
+  
+  
+  /* Contenedor del video */
+  #videoContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #closeButton {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #videoPlayer {
+    width: 80%;
+    max-width: 800px;
+  }
+  
