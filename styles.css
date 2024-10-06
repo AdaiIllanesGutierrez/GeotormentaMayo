@@ -11,6 +11,7 @@ body, html {
     align-items: center;
     justify-content: center;
     color: #ffffff;
+    position:sticky;
   }
   
   #solar-system-container {
@@ -37,22 +38,26 @@ body, html {
   /* Planetas */
   .planet {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 10%;
+    height: 10%;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    display: block;
     transition: transform 0.3s ease;
     animation: orbit 10s linear infinite; /* Animación de órbita */
   }
   
   /* Colores más llamativos */
   #planet1 {
-    width: 200px;
-    height: 200px;
+    width: 25%;
+    height: 25%;
     top: 50%;
     left: 50%;
+    display: flex;
+    display: flexbox;
     /* background: radial-gradient(circle, #ffdd57, #ff7a18); */
     transform: translate(-50%, -50%); /* Centrar la Tierra */
     animation: none; /* La Tierra no orbita */
@@ -61,6 +66,7 @@ body, html {
   #planet2 {
     top: 50%;
     left: 50%;
+    display: flex;
     transform-origin: -150px 0; /* Distancia desde el centro */
     /* background-image: url('latest_1024_0193.mp4'); */
     /* background: radial-gradient(circle, #ff6f61, #de4313); */
@@ -70,12 +76,14 @@ body, html {
     top: 50%;
     left: 50%;
     transform-origin: -200px 0;
+    display: flex;
     /* background: radial-gradient(circle, #5a3f37, #2c7744); */
   }
   
   #planet4 {
     top: 50%;
     left: 50%;
+    display: flex;
     transform-origin: -250px 0;
     /* background: radial-gradient(circle, #36d1dc, #5b86e5); */
   }
@@ -84,6 +92,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform-origin: -300px 0;
+    display: flex;
     /* background: radial-gradient(circle, #ff9966, #ff5e62); */
   } 
   
@@ -91,6 +100,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform-origin: -350px 0;
+    display: flex;
     /* background: radial-gradient(circle, #f7971e, #ffd200); */
   }
   
