@@ -68,7 +68,7 @@ body, html {
     top: 50%;
     left: 50%;
     display: flex;
-    transform-origin: -150px 0; /* Distancia desde el centro */
+    transform-origin: -140px 0; /* Distancia desde el centro */
     /* background-image: url('latest_1024_0193.mp4'); */
     /* background: radial-gradient(circle, #ff6f61, #de4313); */
   }
@@ -76,7 +76,7 @@ body, html {
   #planet3 {
     top: 50%;
     left: 50%;
-    transform-origin: -200px 0;
+    transform-origin: -190px 0;
     display: flex;
     /* background: radial-gradient(circle, #5a3f37, #2c7744); */
   }
@@ -85,14 +85,14 @@ body, html {
     top: 50%;
     left: 50%;
     display: flex;
-    transform-origin: -250px 0;
+    transform-origin: -240px 0;
     /* background: radial-gradient(circle, #36d1dc, #5b86e5); */
   }
   
   #planet5 {
     top: 50%;
     left: 50%;
-    transform-origin: -300px 0;
+    transform-origin: -190px 0;
     display: flex;
     /* background: radial-gradient(circle, #ff9966, #ff5e62); */
   } 

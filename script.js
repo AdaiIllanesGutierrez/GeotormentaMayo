@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para detener la animación y fijar posiciones en círculo
     function stopAnimationAndSetPositionInCircle(planet, index, totalPlanets) {
         const angle = (index / totalPlanets) * 2 * Math.PI; // Divide el círculo en secciones iguales
-        const distance = 150 + (index * 50); // Distancia desde el centro, aumentando para cada planeta
+        const distance = 135 + (index * 35); // Distancia desde el centro, aumentando para cada planeta
         const x = Math.cos(angle) * distance;
         const y = Math.sin(angle) * distance;
         // Fijar la nueva posición en círculo usando left y top
