@@ -12,7 +12,7 @@
 
 <div id="solar-system-container">
     <!-- Título de la página -->
-    <h1 class="title"></h1>
+    <!-- <h1 class="title"> Geomagnetic Storms</h1> -->
     
     <!-- Líneas punteadas para conectar los planetas -->
     <!-- <div class="dotted-line" id="line1"></div>
@@ -20,20 +20,29 @@
     <div class="dotted-line" id="line3"></div>
     <div class="dotted-line" id="line4"></div>
     <div class="dotted-line" id="line5"></div> -->
+    <a href="https://github.com/AdaiIllanesGutierrez/codegeotormentapy.git" class="boton" target="_blank">Git Python</a>
+    <a href="https://github.com/AdaiIllanesGutierrez/GeotormentaMayo.git" class="boton" target="_blank">Git Pagina</a>
+    <a href="https://colab.research.google.com/drive/1QrWc2gIXS_RKSSYwMR2BUzWCaOjutTTA?usp=sharing" class="boton" target="_blank">Colab</a>
 
+    
     <!-- Bot flotante -->
     <div id="bot" class="floating-bot"></div>
 
     <!-- Imágenes de los planetas -->
     <!-- <div class="planet" id="planet1" data-video="videos/video1.mp4" style="background-image: url('textures/sun.jpg');"></div> -->
-    <div class="planet" id="planet1" data-video="videos/video1.mp4">
+    <!-- <div class="planet" id="planet1" data-video="videos/lv_0_20241006073334.mp4">
         <video autoplay muted loop class="background-video" style="border-radius:50% ">
+            <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+    </div> -->
+    <div class="planet" id="planet1" data-video-normal="videos/lv_0_20241006073334.mp4" data-video-3d="videos/intro_0.mp4">
+        <video autoplay muted loop class="background-video" style="border-radius: 50%;">
             <source src="videos/video1.mp4" type="video/mp4">
         </video>
     </div>
     
     <!-- <div class="planet" id="planet2" data-video="videos/video2.mp4" style="background-color: rgba(68, 254, 254, 0.605);"></div> -->
-    <div class="planet" id="planet2" data-video="videos/latest_1024_0131">
+    <div class="planet" id="planet2" data-video-normal="videos/mayon.mp4" data-video-3d="videos/MAYO.mp4">
         <video autoplay muted loop class="background-video" style="border-radius: 50%;">
             <source src="videos/latest_1024_0193.mp4" type="video/mp4">
         </video>
@@ -41,21 +50,21 @@
     
     <!-- <div class="planet" id="planet3" data-video="videos/video3.mp4" style="background-color: rgba(68, 254, 254, 0.605);"></div> -->
     <div class="planet" id="planet3" data-video="videos/latest_1024_0131.mp4">
-        <video autoplay muted loop class="background-video" style="border-radius: 50%;">
+        <video autoplay muted loop class="background-video" style="border-radius: 50%; ">
             <source src="videos/latest_1024_0131.mp4" type="video/mp4">
         </video>
     </div>
     <!-- <div class="planet" id="planet4" data-video="videos/video4.mp4" style="background-color: rgba(68, 254, 254, 0.605);"></div> -->
-    <div class="planet" id="planet4" data-video="videos/latest_1024_0193.mp4">
-        <video autoplay muted loop class="background-video" style="border-radius: 50%;">
-            <source src="videos/latest_1024_0193.mp4" type="video/mp4">
+    <div class="planet" id="planet4" data-video-normal="videos/que.mp4" data-video-3d="videos/que2.mp4">
+        <video autoplay muted loop class="background-video" style="border-radius: 50%; ">
+            <source src="videos/latest_1024_1700.mp4" type="video/mp4">
         </video>
     </div>
 
     <!-- <div class="planet" id="planet5" data-video="videos/video5.mp4" style="background-color: rgba(68, 254, 254, 0.605);"></div> -->
-    <div class="planet" id="planet5" data-video="videos/latest_1024_1700.mp4">
-        <video autoplay muted loop class="background-video" style="border-radius: 50%;">
-            <source src="videos/latest_1024_1700.mp4" type="video/mp4">
+    <div class="planet" id="planet5" data-video-normal="videos/sspace_gcPXRIcT.mp4" data-video-3d="videos/SSPACE.mp4">
+        <video autoplay muted loop class="background-video" style="border-radius: 50%; ">
+            <source src="videos/satelite.mp4" type="video/mp4">
         </video>
     </div>
 
@@ -64,6 +73,13 @@
         <video autoplay muted loop class="background-video" style="border-radius: 50%;">
             <source src="videos/latest_1024_0131.mp4" type="video/mp4">
         </video>
+    </div>
+
+    <!-- Cuadro de selección para el video -->
+    <div id="videoOptionContainer" class="video-option-container">
+        <p>Selecciona una opción:</p>
+        <button id="normalButton">Normal</button>
+        <button id="button3D">3D</button>
     </div>
 </div>
 
@@ -74,6 +90,12 @@
         <source src="" type="video/mp4">
         Tu navegador no soporta la reproducción de videos.
     </video>
+</div>
+<div class="audio-container">
+    <audio controls autoplay loop>
+        <source src="audio.mpeg" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
 </div>
 
 <!-- Archivo JavaScript personalizado -->
